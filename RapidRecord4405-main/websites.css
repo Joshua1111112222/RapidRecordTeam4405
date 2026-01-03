@@ -1,0 +1,150 @@
+#main {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100vw;
+	height:100vh;
+	background:linear-gradient(to bottom, transparent, black), linear-gradient(to right, #67357bff, #472f7fff);
+
+}
+#top-title {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100vw;
+	height:90px;
+	background-color:rgba(0, 0, 0, 0.55);
+	z-index:20;
+
+}
+#title {
+	text-align:center;
+	font-family:'Kode Mono';
+	color:purple;
+	font-weight:700;
+	font-size:50px;
+	margin-top:10px;
+
+	background:linear-gradient(to right, #d56bffff, #8f5fffff);
+	-webkit-background-clip:text;
+	background-clip:text;
+	-webkit-text-fill-color: transparent;
+}
+#welcome {
+	margin-top:110px;
+	color:rgb(152, 152, 152);
+	font-family:'Kode Mono';
+	text-align:center;
+	margin-bottom:5px;
+}
+#name {
+	color:rgb(255, 255, 255);
+	font-family:'Kode Mono';
+	text-align:center;
+	font-size:40px;
+	margin-top:0px;
+	margin-bottom:5px;
+}
+#log-hours-container {
+	width:100vw;
+	height:fit-content;
+	text-align:center;
+}
+#log-text {
+	width:fit-content;
+	color:rgb(200,200,200);
+	font-family:'DM Mono';
+	text-align:center;
+	display:inline-block;
+	font-size:20px;
+	
+}
+#hours {
+	width:100px;
+	height:25px;
+	font-family:'DM Mono';
+	border:2px solid white;
+	border-radius:12.5px;
+	background-color:rgba(255, 255, 255, 0.288);
+	display:inline-block;
+	position:relative;
+	top:-5px;
+	color:white;
+	font-weight:700;
+}
+#info {
+    width:fit-content;
+	color:rgb(200,200,200);
+	font-family:'DM Mono';
+	text-align:center;
+	display:inline-block;
+	font-size:20px;
+}
+#buttons {
+	width:100vw;
+	height:fit-content;
+}
+.hour-select {
+	width:80vw;
+	margin-left:10vw;
+	box-sizing:border-box;
+	border:2px solid white;
+	background-color:rgba(255, 255, 255, 0.228);
+	color:white;
+	font-family:'DM Mono';
+	font-size:30px;
+	text-align:center;
+	outline:none;
+	margin-top:20px;
+	height:60px;
+	border-radius:30px;
+	transition:background-color 0.5s, color 0.5s, width 0.5s, margin-left 0.5s;
+}
+#systemtool {
+	border-color: gold;
+	color: gold;
+}
+.hour-select-input {
+	width:80vw;
+	margin-left:10vw;
+	box-sizing:border-box;
+	border:2px solid white;
+	background-color:rgba(255, 255, 255, 0.228);
+	color:white;
+	font-family:'DM Mono';
+	font-size:30px;
+	text-align:center;
+	outline:none;
+	margin-top:20px;
+	height:60px;
+	border-radius:30px;
+	transition:background-color 0.5s, color 0.5s, width 0.5s, margin-left 0.5s;
+}
+#done {
+	background-color:#d56bffff;
+	width:100vw;
+	height:70px;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	color:white;
+	font-family:'Kode Mono';
+	text-align:center;
+	font-size:40px;
+	padding-top:15px;
+	font-weight:700;
+	cursor:pointer;
+}
+
+.selected-button {
+	background-color:white;
+	color:rgb(30,30,30);
+	width:85vw;
+	margin-left:7.5vw;
+}
+/* .logout { */
+	/* background-color:white; */
+	/* color:rgb(30,30,30); */
+	/* width:85vw; */
+	/* margin-left:7.5vw; */
+/* } */

@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="Perceptive2.0">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="apple-touch-icon" href="images\favicon2.png">
+		
+		<link rel="stylesheet" type="text/css" href="addlog.css">
+		<link rel="icon" type="image/x-icon" href="./images/favicon2.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+		<!-- 'ALERTS' PACKAGE -->
+		<link rel="stylesheet" type="text/css" href="alerts.css?num=2">
+		<script src="alerts.js" defer></script>
+		<!-- END 'ALERTS' PACKAGE -->
+		
+		<script src="addlog.js" defer></script>
+	</head>
+	<body>
+		<!-- IMPORTANT NOTICE
+
+			Join the planning slide!
+
+			https://docs.google.com/presentation/d/1nh3hDHtqCdaGFQI_oL8UOXvOEPd9O2uq53YexszeD10/edit?usp=sharing
+
+			^^ the plan for UI design.
+
+			two tables? & button for view other table
+
+		    /IMPORTANT NOTICE -->
+		<div id="top-title">
+			<h1 id="title">RapidRecord</h1>
+		</div>
+		<div id="main">
+			<h3 id="welcome">Options & Tools</h3>
+			<h1 id="name">Advanced Log</h1>
+			<div id="buttons">
+				<!-- Right over here, the toggleHour function takes in the hours (1 - 5) and -->
+				<!-- whatever button element (noted as 'this') called the function.          -->
+                <input class="hour-select-input" type="text" id="firstname" placeholder="First Name">
+                <input class="hour-select-input" type="text" id="lastname" placeholder="Last Name">
+                <input class="hour-select-input" type="number" id="customhours" placeholder="Hour Input" onchange="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');toggleHour(this.value, this)" />
+				<input class="hour-select-input" type="text" id="date" placeholder="Date (mm/dd/yy)">
+				<input class="hour-select-input" type="text" id="reason" placeholder="Comments">
+				<button class="hour-select" onclick="addLog()">Add Log</button>
+			</div>
+		</div>
+		
+
+		<div id="done" onclick="clickDone()">Back ></div>
+	</body>
+</html>

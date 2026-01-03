@@ -1,0 +1,13 @@
+@media (max-height:660px) {
+	.hour-select {
+		width:40vw;
+		margin-left:5vw;
+		margin-right:5vw;
+		height:9vh;
+	}
+	#buttons {
+		display:flex;
+		flex-wrap:wrap;
+
+	}
+}

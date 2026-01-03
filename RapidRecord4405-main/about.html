@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Perceptive2.0">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="apple-touch-icon" href="images\favicon2.png">
+        
+        <link rel="stylesheet" type="text/css" href="about.css">
+        <link rel="icon" type="image/x-icon" href="./images/favicon2.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+        <script src="about.js?num=4" defer></script>
+        <!-- 'ALERTS' PACKAGE -->
+        <link rel="stylesheet" type="text/css" href="alerts.css?num=3">
+        <script src="alerts.js" defer></script>
+        <!-- END 'ALERTS' PACKAGE -->
+        <script>
+            function removeNames() {
+                const logText = document.getElementById("log-text");
+                logText.innerHTML = logText.innerHTML.replace(", Owen, and Ross,", "").trim();
+            }
+        </script>
+    </head>
+    <body>
+        <div id="top-title">
+            <h1 id="title">RapidRecord</h1>
+        </div>
+        <div id="main">
+            <h3 id="welcome"></h3>
+            <h1 id="name">About</h1>
+            <div id="log-hours-container">
+                <p id="log-text">Hello! We are <span onclick="removeNames()" style="cursor: pointer; color: blue; text-decoration: underline;">Joshua</span>, Owen, and Ross, and we have developed the RapidRecord website to record hours for the 4405 robotics team! 
+                    Click the button below to view other team 4405-related sites and the "How to Use Video" which will teach you how to use this website. 
+                    Have fun!</p>
+            </div>
+            <div id="buttons">
+                <button class="nameentry" onclick="websites()">Websites</button><br><br>
+            </div>
+        </div>
+        
+
+        <div id="done" onclick="clickBack()">Back ></div>
+    </body>
+</html>
