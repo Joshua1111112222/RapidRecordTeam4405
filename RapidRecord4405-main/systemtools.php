@@ -11,16 +11,17 @@
 	}
 	echo "Entered password:" . $psw . "\n";
 
-	if ($psw == "1234567sorrysorry123456") {
+	if ($psw == "password") {
 		echo <<<EOL
 		<html>
 			<head>
 				<meta name="apple-mobile-web-app-capable" content="yes">
-				<meta name="apple-mobile-web-app-title" content="Perceptive2.0">
+				<meta name="apple-mobile-web-app-title" content="4405RapidRecord">
 				<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-				<link rel="apple-touch-icon" href="images\favicon2.png">
+				<link rel="apple-touch-icon" href="logo_old.png">
 
 				<script src="getTotalHours.js" defer></script>
+				<link rel="manifest" href="/manifest.json">
 				<link rel="stylesheet" type="text/css" href="systemtools.css">
 				<link rel="icon" type="image/x-icon" href="./images/favicon2.png">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">

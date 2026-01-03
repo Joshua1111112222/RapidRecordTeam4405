@@ -1,11 +1,10 @@
 #main {
-	position:fixed;
 	top:0px;
 	left:0px;
 	width:100vw;
 	height:100vh;
 	background:linear-gradient(to bottom, transparent, black), linear-gradient(to right, #67357bff, #472f7fff);
-
+	overflow-y: auto; /* Enable vertical scrolling */
 }
 #top-title {
 	position:fixed;

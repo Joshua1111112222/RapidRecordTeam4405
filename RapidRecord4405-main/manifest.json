@@ -1,0 +1,25 @@
+{
+    "name": "4405RapidRecord",
+    "short_name": "RapidRecord",
+    "description": "An app for managing and recording hours from the 4405 robotics team.",
+    "start_url": "/login.html",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#67357b",
+    "icons": [
+      {
+        "src": "logo_old.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "logo_old.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "scope": "/",
+    "orientation": "portrait",
+    "lang": "en-US",
+    "categories": ["productivity", "teamwork", "robotics"]
+  }

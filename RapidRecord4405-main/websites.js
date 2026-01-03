@@ -28,7 +28,7 @@ function fifthpage() {
     self.location = "https://www.youtube.com/watch?v=xjTvB0dmSU8"
 }
 function sixthpage() {
-    self.location = ""
+    self.location = "https://joshua1111112222.github.io/Atomic-Toasters-Robotics/"
 }
 function seventhpage() {
     self.location = ""

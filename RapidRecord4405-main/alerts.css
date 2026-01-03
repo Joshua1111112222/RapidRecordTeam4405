@@ -1,5 +1,4 @@
 .alert_body {
-	position:fixed;
 	top:100px;
 	left:10vw;
 	width:80vw;
@@ -10,6 +9,7 @@
 	padding:10px;
 	box-sizing:border-box;
 	z-index:21;
+	overflow-y: auto; /* Enable vertical scrolling */
 }
 .title_text {
 	text-align:center;
