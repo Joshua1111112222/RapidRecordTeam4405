@@ -62,18 +62,15 @@ No tracking
 No external services
 Simple. Safe. Team-focused.
 🧩 Future Ideas
-User accounts
-Admin approval for hours
-Export to CSV
 Charts & analytics
 Cloud sync
 Event-based hour tracking
+Use data from our custom scouting app Perceptive
 🤝 Contributing
 Contributions are welcome from:
 Team members
 Alumni
 Mentors
-Feel free to fork the repo and submit pull requests.
 📜 License
 This project is open-source and built by Team 4405, for Team 4405.
 ⚙️ Team 4405 – The Atoms Family
