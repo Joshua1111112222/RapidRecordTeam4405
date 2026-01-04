@@ -62,15 +62,15 @@ No tracking
 No external services
 Simple. Safe. Team-focused.
 🧩 Future Ideas
-Charts & analytics
-Cloud sync
-Event-based hour tracking
-Use data from our custom scouting app Perceptive
+• Charts & analytics
+• Cloud sync
+• Event-based hour tracking
+• Use data from our custom scouting app Perceptive
 🤝 Contributing
 Contributions are welcome from:
-Team members
-Alumni
-Mentors
+• Team members
+• Alumni
+• Mentors
 📜 License
 This project is open-source and built by Team 4405, for Team 4405.
 ⚙️ Team 4405 – The Atoms Family
