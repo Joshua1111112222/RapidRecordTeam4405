@@ -1,3 +1,47 @@
+// ===== PAGE PRELOADING =====
+// Preload all pages on startup
+window.addEventListener('load', function() {
+    const pagesToPreload = [
+        'index.html',
+        'submitted.html',
+        'about.html',
+        'teacherindex.html',
+        'teacheroptions.html',
+        'addlog.html',
+        'addinstructor.html',
+        'adduser.html',
+        'areyousure.html',
+        'history.html',
+        'websites.html',
+        'systemtools.php'
+    ];
+    
+    console.log('RapidRecord: Preloading ' + pagesToPreload.length + ' pages');
+    
+    // Prefetch each page
+    pagesToPreload.forEach(function(page) {
+        // Create prefetch link
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = page;
+        link.as = 'document';
+        document.head.appendChild(link);
+        
+        // Also fetch silently in background
+        setTimeout(function() {
+            fetch(page, { 
+                method: 'GET',
+                cache: 'force-cache',
+                headers: {
+                    'X-Preload': 'true'
+                }
+            }).catch(function() {
+                // Silently fail - it's just preloading
+            });
+        }, Math.random() * 1000); // Stagger requests
+    });
+});
+
 if (localStorage.getItem("fullname")) {
 	console.log("fullname is defined.")
 } else {

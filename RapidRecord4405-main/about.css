@@ -1,3 +1,18 @@
+/* Add smooth page transitions */
+html {
+    animation: fadeIn 0.8s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Make all links transition smoothly */
+a, button, [onclick] {
+    transition: all 0.2s ease;
+}
+
 #main {
 	top:0px;
 	left:0px;
