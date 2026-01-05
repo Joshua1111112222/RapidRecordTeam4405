@@ -1,16 +1,39 @@
-/* Add smooth page transitions */
-html {
-    animation: fadeIn 0.8s;
+/* Crossfade animation - fade out old page, fade in new page */
+html, body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Page entering */
+body {
+    opacity: 0;
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Page leaving */
+body.page-leaving {
+    animation: fadeOut 0.4s ease-in forwards;
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-/* Make all links transition smoothly */
-a, button, [onclick] {
-    transition: all 0.2s ease;
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 body {
@@ -26,7 +49,7 @@ body {
 	width:100vw;
 	height:100vh;
 	background:linear-gradient(to bottom, transparent, black), linear-gradient(to right, #67357bff, #472f7fff);
-	overflow-y: auto; /* Enable vertical scrolling */
+	position:fixed;
 }
 #top-title {
 	position:fixed;
