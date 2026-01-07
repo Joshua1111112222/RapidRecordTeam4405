@@ -97,7 +97,7 @@ function newHours(newhours) {
 document.getElementById("hours").textContent = newhours + " hours"
 }
 function clickBack() {
-    self.location = "systemtools.html"
+    self.location = "systemtools.php"
 }
 function rm_log(tm, dt) {
 	create_alert_2.withTitle("WARNING").withBody("You are about to permanently delete this log. Are you sure?",() => {
